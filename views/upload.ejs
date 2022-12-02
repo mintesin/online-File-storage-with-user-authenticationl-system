@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/styles.css">
+<script type="text/javascript">
+function getFilePath(){
+     $('input[type=file]').change(function () {
+         var filePath=$('#fileUpload').val(); 
+     });
+}
+</script>
+<body>
+    <form enctype="multipart/form-data" action="/upload" method="POST">
+    <label for="file">Upload your file Here</label> <br>
+    <input type="file" name="file" required autofocus> <br>
+    <button  class='upload' type="submit">Upload</button> <br>
+ 
+
+    </form>
+  <a href="/files"> <button class="done" >Done!</button></a>
+</body>
+    
+
+
